@@ -1,2 +1,6 @@
+asgiref==3.8.1
 Django==5.1.6
+absl-py==2.1.0
+sqlparse==0.4.4
+tzdata==2023.4
 whitenoise==6.9.0
