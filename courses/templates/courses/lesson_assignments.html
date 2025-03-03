@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_content %}
+<div class="rbt-lesson-area bg-color-white">
+    <div class="rbt-lesson-content-wrapper">
+        <div class="rbt-lesson-leftsidebar">
+            {% include "courses/lesson_navbar.html" %}
+        </div>
+
+        <div class="rbt-lesson-rightsidebar overflow-hidden">
+            <div class="lesson-top-bar">
+                <div class="lesson-top-left">
+                    <div class="rbt-lesson-toggle">
+                        <button class="lesson-toggle-active btn-round-white-opacity" title="Toggle Sidebar"><i class="feather-arrow-left"></i></button>
+                    </div>
+                    <h5>The Complete Web Development: From Zero to Expert!</h5>
+                </div>
+                <div class="lesson-top-right">
+                    <div class="rbt-btn-close">
+                        <a href="{% url 'courses:single_course' %}" title="Go Back to Course" class="rbt-round-btn"><i class="feather-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="content">
+                    <div class="section-title">
+                        <h4>The Complete Web Development: From Zero to Expert!.</h4>
+                        <div class="bg-color-white rbt-shadow-box">
+                            <h5 class="rbt-title-style-3">Your Assignment</h5>
+                            <p>Content Here</p>
+                            <div class="submit-btn">
+                                <a class="rbt-btn btn-gradient hover-icon-reverse" href="lesson-assignments-submit.html">
+                                    <span class="icon-reverse-wrapper">
+                                            <span class="btn-text">Submit Assignment</span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="rbt-progress-parent">
+    <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</div>
+{% endblock%}
